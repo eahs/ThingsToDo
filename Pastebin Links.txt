@@ -1,5 +1,5 @@
-AppShell.xaml: <a href="url">lhttps://pastebin.com/S6qhUkFw</a>
+AppShell.xaml: lhttps://pastebin.com/S6qhUkFw
 
 
-AboutPage: <a href="url">https://pastebin.com/rGmnwdTG</a>
+AboutPage: https://pastebin.com/rGmnwdTG
 
