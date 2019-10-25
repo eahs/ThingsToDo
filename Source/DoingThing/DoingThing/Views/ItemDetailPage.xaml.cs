@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using Plugin.Share;
 using DoingThing.Models;
 using DoingThing.ViewModels;
 
@@ -13,6 +13,7 @@ namespace DoingThing.Views
     [DesignTimeVisible(false)]
     public partial class ItemDetailPage : ContentPage
     {
+
         ItemDetailViewModel viewModel;
 
         public ItemDetailPage(ItemDetailViewModel viewModel)
@@ -29,11 +30,22 @@ namespace DoingThing.Views
             var item = new Item
             {
                 Text = "Item 1",
-                Description = "This is an item description."
+                Description = "This is an item description.",
+                Location = "This is a location.",
+                Link = "This is a link."
             };
+
 
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
         }
+
+        public void a(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        
+
     }
+
 }
