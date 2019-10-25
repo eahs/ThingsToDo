@@ -3,9 +3,7 @@ namespace DoingThing.Models
 {
     public class Image
     {
-        public Image()
-        {
-            public object image { get; set; }
-        }
+        public string Link { get; set; }
+        
     }
 }
