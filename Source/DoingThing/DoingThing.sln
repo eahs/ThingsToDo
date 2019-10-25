@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoingThing.iOS", "DoingThin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoingThing", "DoingThing\DoingThing.csproj", "{04F59863-765A-4D41-A409-05A31B5A6121}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BCE99C47-32A6-4A5A-8090-5A1EE60DC912}"
+	ProjectSection(SolutionItems) = preProject
+		DoingThing.sln = DoingThing.sln
+		MockDataStore.cs = MockDataStore.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
