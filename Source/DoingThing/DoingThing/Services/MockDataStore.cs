@@ -16,11 +16,11 @@ namespace DoingThing.Services
             {
                 new Item { Id = Guid.NewGuid().ToString(), Text = "River Bike Path", Description= "Take a bike ride near the river at bushkill creek."
                 , Location= "Bushkill Creek, PA"
-                , Link="A"},
+                , Link="A", Url= "bushkill.jpg" },
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Crayola Factory", Description="Take a tour inside of the crayola factory and see how crayons are made."
                 , Location= "Crayola Experience, 30 Centre Square, Easton, PA 18042"
-                , Link="B"},
+                , Link="B", Url= "crayola.jpg"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Bushkill Park", Description="Take a day off and chill at the park."
                 , Location= "2100 Bushkill Park Dr, Easton, PA 18040"
