@@ -122,6 +122,7 @@
     <BundleResource Include="Resources\applogo.png" />
     <BundleResource Include="Resources\bushkill.jpg" />
     <BundleResource Include="Resources\crayola.jpg" />
+<<<<<<< refs/remotes/origin/master
     <BundleResource Include="Resources\dutchSprings.jpg" />
     <BundleResource Include="Resources\canal.jpg" />
     <BundleResource Include="Resources\freefall.jpg" />
@@ -129,6 +130,8 @@
     <BundleResource Include="Resources\stateTheater.jpg" />
     <BundleResource Include="Resources\philipsburgRamp.jpg" />
     <BundleResource Include="Resources\bushkillPark.jpg" />
+=======
+>>>>>>> Good Images
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

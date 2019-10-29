@@ -21,6 +21,13 @@ namespace DoingThing.Services
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Crayola Factory", Description="Take a tour inside of the crayola factory and see how crayons are made."
                 , Location= "Crayola Experience, 30 Centre Square, Easton, PA 18042"
                 , Link="B", Url= "crayola.jpg"},
+<<<<<<< refs/remotes/origin/master
+=======
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Bushkill Park", Description="Take a day off and chill at the park."
+                , Location= "2100 Bushkill Park Dr, Easton, PA 18040"
+                , Link="C"},
+>>>>>>> Good Images
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fishing", Description="Go fishing and catch some trout down at the Delaware river canal."
                 , Location= "Philipsburg boat ramp, Delaware River, Riverside Way, Philipsburg, NJ"

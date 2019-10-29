@@ -101,6 +101,7 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+<<<<<<< refs/remotes/origin/master
     <AndroidResource Include="Resources\drawable\bushkillPark.jpg">
       <SubType></SubType>
       <Generator></Generator>
@@ -133,6 +134,8 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+=======
+>>>>>>> Good Images
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DoingThing\DoingThing.csproj">
