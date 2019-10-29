@@ -8,16 +8,15 @@
                 <Label Text="Location:" FontSize="Medium" />
                 <Label Text="{Binding Item.Location}" d:Text="Item location" FontSize="Medium" />
 
-
-        
-                    
                     <Button
                             Text="Open Maps"
                             FontSize=" 15 "
                             TextColor="White"
                             BackgroundColor="#200080"
-                            Clicked="a"
-                    />
+                            Clicked="A"
+                        />
 
+                  <Image Source="{Binding Item.Url}" />
+        
     </StackLayout>
 </ContentPage>

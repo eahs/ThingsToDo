@@ -32,7 +32,8 @@ namespace DoingThing.Views
                 Text = "Item 1",
                 Description = "This is an item description.",
                 Location = "This is a location.",
-                Link = "This is a link."
+                Link = "This is a link.",
+                Url = "This is a Image."
             };
 
 
@@ -40,11 +41,47 @@ namespace DoingThing.Views
             BindingContext = viewModel;
         }
 
-        public void a(object sender, EventArgs e)
+        public void A(object sender, EventArgs e)
         {
             CrossShare.Current.OpenBrowser("https://www.google.com/maps");
         }
-        
+        public void B(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void C(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void D(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void E(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void F(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void G(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void H(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void I(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+        public void J(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+        }
+
 
     }
 
