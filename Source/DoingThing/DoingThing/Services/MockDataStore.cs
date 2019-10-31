@@ -22,37 +22,33 @@ namespace DoingThing.Services
                 , Location= "Crayola Experience, 30 Centre Square, Easton, PA 18042"
                 , Link="B", Url= "crayola.jpg"},
 
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Bushkill Park", Description="Take a day off and chill at the park."
-                , Location= "2100 Bushkill Park Dr, Easton, PA 18040"
-                , Link="C"},
-
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fishing", Description="Go fishing and catch some trout down at the Delaware river canal."
                 , Location= "Philipsburg boat ramp, Delaware River, Riverside Way, Philipsburg, NJ"
-                , Link="D"},
+                , Link="D", Url= "philipsburgRamp.jpg"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Plays", Description="Bored, go see a play at downtown easton."
                 , Location= "State Theatre Center for the Arts, Northhampton Street, Easton, PA"
-                , Link="E"},
+                , Link="E", Url= "stateTheater.jpg"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Movies", Description="Want to watch the latest movie, take an excursion to the nearest movie theatre."
                 , Location= "Regal Northhampton Cinema & RPX, Nazareth Road, Easton, PA"
-                , Link="F"},
+                , Link="F", Url= "regalCinema.jpg"},
 
                  new Item { Id = Guid.NewGuid().ToString(), Text = "Bushkill Park", Description="Bushkill Park is a great place for family fun and a great way to kill some time"
                 , Location= "Bushkill Park, 2100 Bushkill Park Dr, Easton, PA"
-                , Link="G"},
+                , Link="G", Url= "bushkillPark.jpg"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Freefall Trampoline Park", Description="Indoor trampoline park"
                 , Location= "Freefall Trampoline Park, 2800 Baglyos Cir, Bethlehem, PA"
-                , Link="H"},
+                , Link="H", Url= "freefall.jpg"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "National Canal Museum", Description="A museum where you can relive the past of the creators of the canal"
                 , Location= "National Canal Museum, 2750 Hugh Moore Park Rd, Easton, PA 18042"
-                , Link="I"},
+                , Link="I", Url= "canal.jpg"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Dutch Springs", Description="Water park"
                 , Location= "Dutch Springs, 4733 Hanoverville Rd, Bethlehem, PA 18020"
-                , Link="J"}
+                , Link="J", Url= "dutchSprings.jpg"}
             };
         }
 
