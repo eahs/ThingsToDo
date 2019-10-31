@@ -122,6 +122,13 @@
     <BundleResource Include="Resources\applogo.png" />
     <BundleResource Include="Resources\bushkill.jpg" />
     <BundleResource Include="Resources\crayola.jpg" />
+    <BundleResource Include="Resources\dutchSprings.jpg" />
+    <BundleResource Include="Resources\canal.jpg" />
+    <BundleResource Include="Resources\freefall.jpg" />
+    <BundleResource Include="Resources\regalCinema.jpg" />
+    <BundleResource Include="Resources\stateTheater.jpg" />
+    <BundleResource Include="Resources\philipsburgRamp.jpg" />
+    <BundleResource Include="Resources\bushkillPark.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -144,5 +151,11 @@
       <Project>{04F59863-765A-4D41-A409-05A31B5A6121}</Project>
       <Name>DoingThing</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\about_page_logo.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
 </Project>

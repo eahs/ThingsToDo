@@ -1,22 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.ItemDetailPage" Title="{Binding Title}">
-    <StackLayout Spacing="25" Padding="25">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Medium" />
-            <Label Text="Description:" FontSize="Medium" />
+    <StackLayout Spacing="25" Padding="25"> 
+        <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize=" 25 " FontAttributes="Bold" />
             <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Medium" />
-                <Label Text="Location:" FontSize="Medium" />
+                <Label Text="Location:" FontSize="Medium" FontAttributes="Italic" />
                 <Label Text="{Binding Item.Location}" d:Text="Item location" FontSize="Medium" />
 
                     <Button
-                            Text="Open Maps"
-                            FontSize=" 15 "
-                            TextColor="White"
-                            BackgroundColor="#200080"
-                            Clicked="A"
-                        />
+                        Text="Open Maps"
+                        FontSize=" 15 "
+                        TextColor="White"
+                        BackgroundColor="#200080"
+                        Clicked="A"
+                    />
 
-                  <Image Source="{Binding Item.Url}" />
+                    <Image
+                        Source="{Binding Item.Url}"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                    />
         
     </StackLayout>
 </ContentPage>
