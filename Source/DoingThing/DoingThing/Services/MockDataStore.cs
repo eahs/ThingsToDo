@@ -27,7 +27,6 @@ namespace DoingThing.Services
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Bushkill Park", Description="Take a day off and chill at the park."
                 , Location= "2100 Bushkill Park Dr, Easton, PA 18040"
                 , Link="C"},
->>>>>>> Good Images
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fishing", Description="Go fishing and catch some trout down at the Delaware river canal."
                 , Location= "Philipsburg boat ramp, Delaware River, Riverside Way, Philipsburg, NJ"
