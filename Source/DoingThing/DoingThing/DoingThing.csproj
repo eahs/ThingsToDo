@@ -14,8 +14,7 @@
     <Compile Remove="Views\ItemDetailPage%282%29.xaml.cs" />
     <Compile Remove="Views\ButtonCode.cs" />
     <Compile Remove="Views\ItemDetailPage%282%29.xaml.cs" />
-    <Compile Remove="Views\MapPage.xaml.cs" />
-    <Compile Remove="ViewModels\MapViewModel.cs" />
+    <Compile Remove="Views\AboutPage %28copy%29.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\ItemDetailPage %28copy%29.xaml.cs">
@@ -24,6 +23,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="Views\MapPage.xaml" />
+    <EmbeddedResource Remove="Views\AboutPage %28copy%29.xaml" />
   </ItemGroup>
 </Project>
