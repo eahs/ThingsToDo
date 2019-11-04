@@ -129,6 +129,7 @@
     <BundleResource Include="Resources\stateTheater.jpg" />
     <BundleResource Include="Resources\philipsburgRamp.jpg" />
     <BundleResource Include="Resources\bushkillPark.jpg" />
+    <BundleResource Include="Resources\map.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

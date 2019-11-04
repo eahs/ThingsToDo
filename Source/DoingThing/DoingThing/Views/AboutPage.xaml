@@ -39,7 +39,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Creators: Daniel Cichocki, Tyler Ruggiero and Jonathan Araya" />
+                                <Span Text="Creators: Daniel Cichocki, Tyler Ruggiero, Dylan McIntyre and Jonathan Araya" />
                                 <Span Text=" " />
                                 <Span Text="" FontAttributes="Bold" />
                                 <Span Text="" />
