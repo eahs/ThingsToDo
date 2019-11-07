@@ -21,9 +21,9 @@ namespace DoingThing.Views
 
             Item = new Item
             {
-                Text = "Item name",
-                Description = "This is an item description.",
-                Location = "This is a location."
+                Text = "Location name",
+                Description = "This is a location description",
+                Location = "This is an address"
             };
 
             BindingContext = this;

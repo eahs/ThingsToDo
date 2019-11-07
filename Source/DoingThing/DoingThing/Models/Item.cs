@@ -9,7 +9,6 @@ namespace DoingThing.Models
         public string Description { get; set; }
         public string Location { get; set; }
         public string Link { get; set; }
-        public string Url { get; set; }
-        //hehehahah
+        public string Url { get; set; } 
     }
 }

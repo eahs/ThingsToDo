@@ -1,5 +1,11 @@
 ﻿
 <ContentPage 
 xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-mc:Ignorable="d" x:Class="DoingThing.Views.MapPage" xmlns:vm="clr-namespace:DoingThing.ViewModels" >
+mc:Ignorable="d" x:Class="DoingThing.Views.MapPage" xmlns:vm="clr-namespace:DoingThing.ViewModels"  Title="{Binding Title}" x:Name="MapMapPage">
+    <ContentPage.BindingContext>
+        <vm:MapViewModel />
+    </ContentPage.BindingContext>
+
+    <Image Source="EastonMap" />
+
 </ContentPage>
