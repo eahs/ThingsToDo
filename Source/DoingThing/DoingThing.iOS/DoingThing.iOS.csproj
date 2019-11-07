@@ -133,6 +133,10 @@
     <BundleResource Include="Resources\philipsburgRamp.jpg" />
     <BundleResource Include="Resources\bushkillPark.jpg" />
     <BundleResource Include="Resources\map.png" />
+<<<<<<<
+>>>>>>>
+=======
+    <BundleResource Include="Resources\EastonMap.png" />
 >>>>>>>
   </ItemGroup>
   <ItemGroup>
