@@ -35,7 +35,7 @@ namespace DoingThing.Views
             await Map.OpenAsync(lat, lng, new MapLaunchOptions
             {
                 Name = EntryName.Text,
-                NavigationMode = NavigationMode.Default
+                NavigationMode = NavigationMode.None
             });
 
         }
