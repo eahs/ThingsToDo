@@ -4,5 +4,7 @@
     <ContentPage.BindingContext>
         <vm:WeatherViewModel />
     </ContentPage.BindingContext>
+
+
      
 </ContentPage>
