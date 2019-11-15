@@ -89,10 +89,6 @@
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
     <AndroidResource Include="Resources\drawable\tab_about.png" />
     <AndroidResource Include="Resources\drawable\tab_feed.png" />
-    <AndroidResource Include="Resources\drawable\about_page_logo.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\bushkill.jpg">
       <SubType></SubType>
       <Generator></Generator>
@@ -147,7 +143,10 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
->>>>>>>
+    <AndroidResource Include="Resources\drawable\AboutPageLogo.pdf">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DoingThing\DoingThing.csproj">
