@@ -22,11 +22,14 @@
     </Shell.Resources>
     <!-- Your Pages -->
     <TabBar>
-        <Tab Title="Browse" Icon="tab_feed.png">
+        <Tab Title="Activities" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
         <Tab Title="Map" Icon="map.png">
             <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
+        </Tab>
+        <Tab Title="Weather" Icon="map.png">
+            <ShellContent ContentTemplate="{DataTemplate local:WeatherPage}" />
         </Tab>
         <Tab Title="About" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
