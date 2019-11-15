@@ -119,7 +119,6 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="Resources\applogo.png" />
     <BundleResource Include="Resources\bushkill.jpg" />
     <BundleResource Include="Resources\crayola.jpg" />
     <BundleResource Include="Resources\dutchSprings.jpg" />
@@ -131,7 +130,8 @@
     <BundleResource Include="Resources\bushkillPark.jpg" />
     <BundleResource Include="Resources\map.png" />
     <BundleResource Include="Resources\EastonMap.png" />
-    <BundleResource Include="Resources\AboutPageLogo.pdf" />
+    <BundleResource Include="Resources\EastonLogo.jpeg" />
+    <BundleResource Include="Resources\Weather.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

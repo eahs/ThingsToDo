@@ -125,10 +125,6 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\applogo.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\drawable\map.png">
       <SubType></SubType>
       <Generator></Generator>
@@ -137,7 +133,11 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\AboutPageLogo.pdf">
+    <AndroidResource Include="Resources\drawable\EastonLogo.jpeg">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Weather.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
