@@ -131,6 +131,7 @@
     <BundleResource Include="Resources\bushkillPark.jpg" />
     <BundleResource Include="Resources\map.png" />
     <BundleResource Include="Resources\EastonMap.png" />
+    <BundleResource Include="Resources\AboutPageLogo.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -153,11 +154,5 @@
       <Project>{04F59863-765A-4D41-A409-05A31B5A6121}</Project>
       <Name>DoingThing</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\about_page_logo.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
   </ItemGroup>
 </Project>
