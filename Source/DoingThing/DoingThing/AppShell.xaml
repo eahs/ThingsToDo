@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" xmlns:local="clr-namespace:DoingThing.Views" Title="DoingThing" x:Class="DoingThing.AppShell">
-    <!-- 
-        Styles and Resources 
-    -->
+
+
+
     <Shell.Resources>
         <ResourceDictionary>
             <Color x:Key="NavigationPrimary">#200080</Color>
@@ -20,7 +20,8 @@
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
         </ResourceDictionary>
     </Shell.Resources>
-    <!-- Your Pages -->
+    
+
     <TabBar>
         <Tab Title="Activities" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
@@ -34,35 +35,18 @@
         <Tab Title="About" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
+
         
     </TabBar>
-    <!-- Optional Templates 
-    // These may be provided inline as below or as separate classes.
 
-    // This header appears at the top of the Flyout.
-    <Shell.FlyoutHeaderTemplate>
-        <DataTemplate>
-            <Grid>ContentHere</Grid>
-        </DataTemplate>
-    </Shell.FlyoutHeaderTemplate>
+    <!--<FlyoutItem
 
-    // ItemTemplate is for ShellItems as displayed in a Flyout
-    <Shell.ItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Title, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.ItemTemplate>
+               Title="Setting"
+               Shell.TabBarIsVisible=" False"
+               FlyoutDisplayOptions="AsMultipleItems">
 
-    // MenuItemTemplate is for MenuItems as displayed in a Flyout
-    <Shell.MenuItemTemplate>
-        <DataTemplate>
-            <ContentView>
-                Bindable Properties: Text, Icon
-            </ContentView>
-        </DataTemplate>
-    </Shell.MenuItemTemplate>
+               <ShellContent Title="Setting" Icon="" IsTabStop="True" ContentTemplate= "{DataTemplate local:AboutPage}"/>
 
-    -->
+   </FlyoutItem>-->
+
 </Shell>

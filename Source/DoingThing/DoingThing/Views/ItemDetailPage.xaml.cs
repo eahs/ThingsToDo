@@ -6,11 +6,17 @@ using Plugin.Share;
 using DoingThing.Models;
 using DoingThing.ViewModels;
 
+using Xamarin.Essentials;
+
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace DoingThing.Views
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemDetailPage : ContentPage
     {
 
@@ -32,8 +38,9 @@ namespace DoingThing.Views
                 Text = "Item 1",
                 Description = "This is an item description.",
                 Location = "This is a location.",
-                Link = "This is a link.",
-                Url = "This is a Image."
+                Url = "This is a Image.",
+                FC = "These are the first coords",
+                SC = "These are the second coords"
             };
 
 
@@ -41,46 +48,64 @@ namespace DoingThing.Views
             BindingContext = viewModel;
         }
 
-        public void A(object sender, EventArgs e)
+
+        private async void ButtonOpenCoords_Clicked(object sender, EventArgs e)
         {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+            if (!double.TryParse(EntryLatitude.Text, out double lat))
+                return;
+
+            if (!double.TryParse(EntryLongitude.Text, out double lng))
+                return;
+
+            await Map.OpenAsync(lat, lng, new MapLaunchOptions
+            {
+                Name = EntryName.Text,
+                NavigationMode = NavigationMode.None
+            });
+
         }
-        public void B(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void C(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void D(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void E(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void F(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void G(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void H(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void I(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
-        public void J(object sender, EventArgs e)
-        {
-            CrossShare.Current.OpenBrowser("https://www.google.com/maps");
-        }
+
+        /*public void A(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void B(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void C(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void D(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void E(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void F(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void G(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void H(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void I(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       public void J(object sender, EventArgs e)
+       {
+           CrossShare.Current.OpenBrowser("https://www.google.com/maps");
+       }
+       */
 
 
     }

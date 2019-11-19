@@ -1,20 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.ItemDetailPage" Title="{Binding Title}">
-    <StackLayout Spacing="25" Padding="25"> 
+    <StackLayout Spacing="25" Padding="10"> 
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize=" 25 " FontAttributes="Bold" />
             <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Medium" />
                 <Label Text="Location:" FontSize="Medium" FontAttributes="Italic" />
                 <Label Text="{Binding Item.Location}" d:Text="Item location" FontSize="Medium" />
 
-                    <Button
-                            Text="Open Maps"
-                            FontSize=" 15 "
-                            TextColor="White"
-                            BackgroundColor="#200080"
-                            Clicked="A"
-                        />
+                    <!--<Button
+                        Text="Open Maps"
+                        FontSize=" 15 "
+                        TextColor="White"
+                        BackgroundColor="#200080"
+                        Clicked="A"
+                    />-->
 
-                  <Image Source="{Binding Item.Url}" />
+                <ScrollView>
+                    <StackLayout Padding="0">
+                        <Entry x:Name="EntryName" Keyboard="Text" Text="{Binding Item.Text}" />
+
+                        <Label Text="{Binding Item.FC}"
+                               x:Name="EntryLatitude" />
+
+                        <Label Text="{Binding Item.SC}"
+                               x:Name="EntryLongitude" />
+
+                        <Button Text="Open Location" x:Name="ButtonOpenCoords"
+                                BackgroundColor="#200080"
+                                TextColor="White"
+                            Clicked="ButtonOpenCoords_Clicked" />
+
+                    </StackLayout>
+                </ScrollView>
+
+                    <Image
+                        Source="{Binding Item.Url}"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                    />
+
+         
+                    
         
     </StackLayout>
 </ContentPage>
