@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using Plugin.Share;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +16,10 @@ namespace DoingThing.Views
             InitializeComponent();
         }
 
-        
+        public void Clicked(object sender, EventArgs e)
+        {
+            CrossShare.Current.OpenBrowser("https://www.eastonsd.org");
+        }
 
     }
 }

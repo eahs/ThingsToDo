@@ -21,9 +21,14 @@
                     <Image Source="EastonLogo.jpeg" VerticalOptions="Center" HeightRequest="199" />
                 </ContentView>
             </StackLayout>
+            <Button Text="        Easton Homepage        " FontSize="20"
+               Clicked="Clicked"
+               HorizontalOptions="Center"
+               BackgroundColor="#200080"
+               TextColor="White"/>
         </StackLayout>
         <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+            <StackLayout Orientation="Vertical" Padding="16,10,16,40" Spacing="10">
                 <Label FontSize="22">
                     <Label.FormattedText>
                         <FormattedString>

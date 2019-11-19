@@ -30,8 +30,6 @@ namespace DoingThing.Views
             if (!double.TryParse(EntryLongitude.Text, out double lng))
                 return;
 
-
-
             await Map.OpenAsync(lat, lng, new MapLaunchOptions
             {
                 Name = EntryName.Text,
