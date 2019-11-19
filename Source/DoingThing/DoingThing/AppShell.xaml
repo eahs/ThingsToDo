@@ -28,7 +28,7 @@
         <Tab Title="Map" Icon="map.png">
             <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
         </Tab>
-        <Tab Title="Weather" Icon="tab_feed.png">
+        <Tab Title="Weather" Icon="Weather.png">
             <ShellContent ContentTemplate="{DataTemplate local:WeatherPage}" />
         </Tab>
         <Tab Title="About" Icon="tab_about.png">
