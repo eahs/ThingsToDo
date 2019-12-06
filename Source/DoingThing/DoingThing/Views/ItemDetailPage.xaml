@@ -18,10 +18,10 @@
                     <StackLayout Padding="0">
                         <Entry x:Name="EntryName" Keyboard="Text" Text="{Binding Item.Text}" />
 
-                        <Label Text="{Binding Item.FC}"
+                        <Label IsVisible="false"  Text="{Binding Item.FC}"
                                x:Name="EntryLatitude" />
 
-                        <Label Text="{Binding Item.SC}"
+                        <Label IsVisible="false" Text="{Binding Item.SC}"
                                x:Name="EntryLongitude" />
 
                         <Button Text="Open Location" x:Name="ButtonOpenCoords"

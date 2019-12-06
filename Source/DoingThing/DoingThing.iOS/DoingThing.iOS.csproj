@@ -138,6 +138,7 @@
     <BundleResource Include="Resources\EastonMap.png" />
     <BundleResource Include="Resources\EastonLogo.jpeg" />
     <BundleResource Include="Resources\Weather.png" />
+    <BundleResource Include="Resources\Dollar.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

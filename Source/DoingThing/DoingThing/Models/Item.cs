@@ -11,6 +11,6 @@ namespace DoingThing.Models
         public string Url { get; set; }
         public string FC { get; set; }
         public string SC { get; set; }
-        //h
+        public string Dollar { get; set; }
     }
 }

@@ -18,9 +18,19 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding Text}" d:Text="{Binding .}"   LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="22"  />
-                            <Label Text="{Binding Description}" d:Text="Item description" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="16" FontAttributes="Italic"/>
+                        <StackLayout Padding="5">
+                            <Image  Source="{Binding Dollar}" HorizontalOptions="End" VerticalOptions="End" HeightRequest="35" />
+                            <Label Text="{Binding Text}"   HorizontalOptions="Center"  FontSize="33"  > 
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="iOS" Value="Lobster-Regular" />
+                                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
+                                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                                    </OnPlatform>
+                                </Label.FontFamily>         
+                            </Label>
+                            <!--<Label Text="{Binding Description}" d:Text="Item description" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="22" FontAttributes="Italic"/>-->
+                            <Image  Source=" " HorizontalOptions="End" VerticalOptions="End" HeightRequest="25" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

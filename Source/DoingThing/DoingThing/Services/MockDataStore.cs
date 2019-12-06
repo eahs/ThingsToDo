@@ -18,13 +18,15 @@ namespace DoingThing.Services
                 , Location= "Bushkill Creek, PA"
                 , Url= "bushkill.jpg"
                 , FC = "40.695932"
-                , SC = "-75.2054542"},
+                , SC = "-75.2054542"
+                },
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Crayola Factory", Description="Take a tour inside of the crayola factory and see how crayons are made."
                 , Location= "Crayola Experience, 30 Centre Square, Easton, PA 18042"
                 , Url= "crayola.jpg"
                 , FC = "40.690670"
-                , SC = "-75.209780"},
+                , SC = "-75.209780"
+                , Dollar = "Dollar.png"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Bushkill Park", Description="Take a day off and chill at the park."
                 , Location= "2100 Bushkill Park Dr, Easton, PA 18040"
@@ -40,7 +42,8 @@ namespace DoingThing.Services
                 , Location= "State Theatre Center for the Arts, Northhampton Street, Easton, PA"
                 , Url= "stateTheater.jpg"
                 , FC = "40.687290"
-                , SC = "-75.250400"},
+                , SC = "-75.250400"
+                , Dollar = "Dollar.png"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Movies", Description="Want to watch the latest movie, take an excursion to the nearest movie theatre."
                 , Location= "Regal Northhampton Cinema & RPX, Nazareth Road, Easton, PA"
@@ -58,7 +61,8 @@ namespace DoingThing.Services
                 , Location= "Freefall Trampoline Park, 2800 Baglyos Cir, Bethlehem, PA"
                 , Url= "freefall.jpg"
                 , FC = "40.661940"
-                , SC = "-75.297010"},
+                , SC = "-75.297010"
+                , Dollar = "Dollar.png"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "National Canal Museum", Description="A museum where you can relive the past of the creators of the canal"
                 , Location= "National Canal Museum, 2750 Hugh Moore Park Rd, Easton, PA 18042"
@@ -70,7 +74,8 @@ namespace DoingThing.Services
                 , Location= "Dutch Springs, 4733 Hanoverville Rd, Bethlehem, PA 18020"
                 , Url= "dutchSprings.jpg"
                 , FC = "40.687260"
-                , SC = "-75.355360"}
+                , SC = "-75.355360"
+                , Dollar = "Dollar.png"}
             };
         }
 
