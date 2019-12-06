@@ -14,6 +14,8 @@
     <Compile Remove="Views\ItemDetailPage%282%29.xaml.cs" />
     <Compile Remove="Views\ButtonCode.cs" />
     <Compile Remove="Views\ItemDetailPage%282%29.xaml.cs" />
+    <Compile Remove="Views\MapPage.xaml.cs" />
+    <Compile Remove="ViewModels\MapViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\ItemDetailPage %28copy%29.xaml.cs">
@@ -32,5 +34,8 @@
       <DependentUpon>WeatherPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Views\MapPage.xaml" />
   </ItemGroup>
 </Project>

@@ -25,10 +25,7 @@
     <TabBar>
         <Tab Title="Activities" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
-        </Tab>
-        <Tab Title="Map" Icon="map.png">
-            <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
-        </Tab>
+        </Tab> 
         <Tab Title="Weather" Icon="Weather.png">
             <ShellContent ContentTemplate="{DataTemplate local:WeatherPage}" />
         </Tab>
