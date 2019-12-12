@@ -133,6 +133,7 @@
     <BundleResource Include="Resources\EastonLogo.jpeg" />
     <BundleResource Include="Resources\Weather.png" />
     <BundleResource Include="Resources\Dollar.png" />
+    <BundleResource Include="Resources\Windows_Settings_app_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DoingThing.Views.SettingsPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="Cancel_Click" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Switch x:Name="switch1" OnColor="Black" ThumbColor="Wheat" IsToggled="False"/>
+    </ContentPage.Content>
+</ContentPage>
