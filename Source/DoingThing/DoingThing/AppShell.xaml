@@ -26,9 +26,7 @@
         <Tab Title="Activities" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab> 
-        <Tab Title="Weather" Icon="Weather.png">
-            <ShellContent ContentTemplate="{DataTemplate local:WeatherPage}" />
-        </Tab>
+        
         <Tab Title="About" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
