@@ -13,7 +13,7 @@ namespace DoingThing.Views
             InitializeComponent();
         }
 
-        
+         
 
     }
 }

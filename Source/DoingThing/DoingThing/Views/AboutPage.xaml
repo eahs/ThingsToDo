@@ -24,7 +24,7 @@
             <Button Text="        Easton Homepage        " FontSize="20"
                Clicked="Clicked"
                HorizontalOptions="Center"
-               BackgroundColor="#200080"
+               BackgroundColor="#9a0000"
                TextColor="White"/>
         </StackLayout>
         <ScrollView Grid.Row="1">

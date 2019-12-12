@@ -14,6 +14,14 @@ namespace DoingThing.Services
         {
             items = new List<Item>()
             {
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Movies", Description="Want to watch the latest movie, take an excursion to the nearest movie theatre."
+                , Location= "Regal Northhampton Cinema & RPX, Nazareth Road, Easton, PA"
+                , Url= "regalCinema.jpg"
+                , FC = "40.692140"
+                , SC = "-75.259740"
+                , Dollar = "Dollar.png"},
+
                 new Item { Id = Guid.NewGuid().ToString(), Text = "River Bike Path", Description= "Take a bike ride near the river at bushkill creek."
                 , Location= "Bushkill Creek, PA"
                 , Url= "bushkill.jpg"
@@ -45,11 +53,6 @@ namespace DoingThing.Services
                 , SC = "-75.250400"
                 , Dollar = "Dollar.png"},
 
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Movies", Description="Want to watch the latest movie, take an excursion to the nearest movie theatre."
-                , Location= "Regal Northhampton Cinema & RPX, Nazareth Road, Easton, PA"
-                , Url= "regalCinema.jpg"
-                , FC = "40.692140"
-                , SC = "-75.259740"},
 
                  new Item { Id = Guid.NewGuid().ToString(), Text = "Bushkill Park", Description="Bushkill Park is a great place for family fun and a great way to kill some time"
                 , Location= "Bushkill Park, 2100 Bushkill Park Dr, Easton, PA"
