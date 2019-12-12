@@ -9,9 +9,9 @@
             <Label Text="Text" FontSize="Medium" />
             <Entry Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />
                 <Label Text="Description" FontSize="Medium" />
-                <Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
+                <Entry Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small"   />
                     <Label Text="Location" FontSize="Medium" />
-                    <Editor Text="{Binding Item.Location}" d:Text="Item location" FontSize="Small" Margin="0" />
+                    <Entry Text="{Binding Item.Location}" d:Text="Item location" FontSize="Small"   />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
