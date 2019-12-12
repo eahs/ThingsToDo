@@ -11,6 +11,11 @@ namespace DoingThing.Views
     [DesignTimeVisible(false)]
     public partial class AboutPage : ContentPage
     {
+
+        async void AddItem_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new SettingsPage()));
+        }
         public AboutPage()
         {
             InitializeComponent();
@@ -20,6 +25,6 @@ namespace DoingThing.Views
         {
             CrossShare.Current.OpenBrowser("https://www.eastonsd.org");
         }
-
+        
     }
 }
