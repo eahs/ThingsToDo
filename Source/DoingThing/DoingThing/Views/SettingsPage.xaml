@@ -4,6 +4,6 @@
         <ToolbarItem Text="Back" Clicked="Cancel_Click" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <Switch x:Name="switch1" OnColor="Black" ThumbColor="Wheat" IsToggled="False"/>
+        <Switch x:Name="switch1" OnColor="#24A0ED" ThumbColor="White" IsToggled="False" /> 
     </ContentPage.Content>
 </ContentPage>
