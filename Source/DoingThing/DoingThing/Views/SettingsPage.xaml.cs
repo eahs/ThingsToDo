@@ -7,10 +7,8 @@ namespace DoingThing.Views
 {
     public partial class SettingsPage : ContentPage
     {
-        void OnToggled(object sender, ToggledEventArgs e)
-        {
-
-        }
+        public event EventHandler<ToggledEventArgs> Toggled;
+        
         public SettingsPage()
 
         {
