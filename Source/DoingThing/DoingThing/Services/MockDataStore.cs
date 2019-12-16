@@ -74,6 +74,40 @@ namespace DoingThing.Services
                 , Url= "dutchSprings.jpg"
                 , FC = "40.687260"
                 , SC = "-75.355360"
+                , Dollar = "Dollar.png"},
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Lost River Caverns", Description="N/A"
+                , Location= "726 Durham St Hellertown, PA 18055"
+                , Url= "lostrivercaverns.jpg"
+                , FC = "40.580820"
+                , SC = "-75.330660"
+                , Dollar = "Dollar.png"},
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Klein Farms Dairy & Creamery", Description="N/A"
+                , Location= "726 Durham St Hellertown, PA 18055"
+                , Url= "kleinfarms.jpg"
+                , FC = "40.761463"
+                , SC = "-75.227664"
+                , Dollar = "Dollar.png"},
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Twin Rivers Tubing", Description="N/A"
+                , Location= "4 Union Square, Phillipsburg, NJ 08865"
+                , Url= "twinriverstubing.jpg"
+                , FC = "40.691107"
+                , SC = "-75.202610"
+                , Dollar = "Dollar.png"},
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Human vs Room Escape Room", Description="N/A"
+                , Location= "4210 Fritch Dr, Bethlehem, PA 18020"
+                , FC = "40.682311"
+                , SC = "-75.344597"
+                , Dollar = "Dollar.png"},
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Martin Guitar Factory and Museum", Description="N/A"
+                , Location= "510 Sycamore St, Nazareth, PA 18064"
+                , Url= "martinguitar.jpg"
+                , FC = "40.755096"
+                , SC = "-75.304337"
                 , Dollar = "Dollar.png"}
             };
         }

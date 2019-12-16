@@ -134,6 +134,10 @@
     <BundleResource Include="Resources\Weather.png" />
     <BundleResource Include="Resources\Dollar.png" />
     <BundleResource Include="Resources\Windows_Settings_app_icon.png" />
+    <BundleResource Include="Resources\kleinfarms.jpg" />
+    <BundleResource Include="Resources\lostrivercaverns.jpg" />
+    <BundleResource Include="Resources\martinguitar.jpg" />
+    <BundleResource Include="Resources\twinriverstubing.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
