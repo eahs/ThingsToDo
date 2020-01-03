@@ -1,8 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.ItemDetailPage" Title="{Binding Title}">
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.ItemDetailPage" Title="{Binding Title}">
     <StackLayout Spacing="25" Padding="10"> 
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize=" 25 " FontAttributes="Bold" />
-            <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Medium" />
+
+        <ContentView>
+            <Image  Source="{Binding Item.Dollar}" HorizontalOptions="Start" HeightRequest="35" />
+        </ContentView>
+
+        <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Medium" />
                 <Label Text="Location:" FontSize="Medium" FontAttributes="Italic" />
                 <Label Text="{Binding Item.Location}" d:Text="Item location" FontSize="Medium" />
 
@@ -16,7 +20,7 @@
 
                 <ScrollView>
                     <StackLayout Padding="0">
-                        <Entry x:Name="EntryName" Keyboard="Text" Text="{Binding Item.Text}" />
+                        <Entry x:Name="EntryName" IsVisible="False" Keyboard="Text" Text="{Binding Item.Text}" />
 
                         <Label IsVisible="false"  Text="{Binding Item.FC}"
                                x:Name="EntryLatitude" />

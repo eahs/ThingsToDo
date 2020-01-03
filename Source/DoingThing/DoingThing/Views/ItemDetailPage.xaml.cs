@@ -1,17 +1,11 @@
 ﻿using System;
 using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using Plugin.Share;
+using Xamarin.Forms.Xaml; 
 using DoingThing.Models;
 using DoingThing.ViewModels;
-
 using Xamarin.Essentials;
-
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+ 
 
 namespace DoingThing.Views
 {
@@ -40,7 +34,8 @@ namespace DoingThing.Views
                 Location = "This is a location.",
                 Url = "This is a Image.",
                 FC = "These are the first coords",
-                SC = "These are the second coords"
+                SC = "These are the second coords",
+                Dollar = "Dollar"
             };
 
 

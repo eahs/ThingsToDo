@@ -18,9 +18,9 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Padding="5">
-                            <Image  Source="{Binding Dollar}" HorizontalOptions="End" VerticalOptions="End" HeightRequest="35" />
-                            <Label Text="{Binding Text}"   HorizontalOptions="Center"  FontSize="33"  > 
+                        <StackLayout Padding="15">
+                            
+                            <Label Text="{Binding Text}"   HorizontalOptions="StartAndExpand"  FontSize="33"  > 
                                 <Label.FontFamily>
                                     <OnPlatform x:TypeArguments="x:String">
                                             <On Platform="iOS" Value="Lobster-Regular" />
