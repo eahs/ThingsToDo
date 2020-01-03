@@ -12,5 +12,6 @@ namespace DoingThing.Models
         public string FC { get; set; }
         public string SC { get; set; }
         public string Dollar { get; set; }
+        public string Hours { get; set; }
     }
 }

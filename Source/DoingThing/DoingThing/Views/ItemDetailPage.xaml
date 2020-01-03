@@ -32,6 +32,7 @@
                                 BackgroundColor="#200080"
                                 TextColor="White"
                             Clicked="ButtonOpenCoords_Clicked" />
+                        <Label Text="{Binding Item.Hours}" />
 
                     </StackLayout>
                 </ScrollView>

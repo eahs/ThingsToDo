@@ -20,7 +20,15 @@ namespace DoingThing.Services
                 , Url= "regalCinema.jpg"
                 , FC = "40.692140"
                 , SC = "-75.259740"
-                , Dollar = "Dollar.png"},
+                , Dollar = "Dollar.png"
+                , Hours =
+                " Sun 11:00AM-11:30PM \n" +
+                " Mon 11:00AM-11:30PM \n" +
+                " Tue 11:00AM-11:30PM \n" +
+                " Wed 11:00AM-11:30PM \n" +
+                " Thu 11:00AM-11:30PM \n" +
+                " Fri 11:00AM-11:30PM \n" +
+                " Sat 11:00AM-11:30PM \n"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "River Bike Path", Description= "Take a bike ride near the river at bushkill creek."
                 , Location= "Bushkill Creek, PA"

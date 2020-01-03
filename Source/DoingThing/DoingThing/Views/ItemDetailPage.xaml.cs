@@ -35,7 +35,8 @@ namespace DoingThing.Views
                 Url = "This is a Image.",
                 FC = "These are the first coords",
                 SC = "These are the second coords",
-                Dollar = "Dollar"
+                Dollar = "Dollar",
+                Hours = "Hours"
             };
 
 
