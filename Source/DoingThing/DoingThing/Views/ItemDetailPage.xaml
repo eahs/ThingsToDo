@@ -3,7 +3,7 @@
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize=" 25 " FontAttributes="Bold" />
 
         <ContentView>
-            <Image  Source="{Binding Item.Dollar}" HorizontalOptions="Start" HeightRequest="35" />
+            <Image  Source="{Binding Item.Dollar}" HorizontalOptions="End" HeightRequest="35" />
         </ContentView>
 
         <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Medium" />
@@ -39,7 +39,9 @@
                     <Image
                         Source="{Binding Item.Url}"
                         HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand"
+                        VerticalOptions="EndAndExpand"
+                        HeightRequest="250"
+                         
                     />
 
          
