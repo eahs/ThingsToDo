@@ -11,10 +11,9 @@ namespace DoingThing.Views
     [DesignTimeVisible(false)]
     public partial class AboutPage : ContentPage
     {
-
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new MyPage()));
+            await Navigation.PushAsync(new SettingsPage2());
         }
         public AboutPage()
         {
