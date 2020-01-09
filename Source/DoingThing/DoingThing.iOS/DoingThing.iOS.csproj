@@ -138,6 +138,8 @@
     <BundleResource Include="Resources\lostrivercaverns.jpg" />
     <BundleResource Include="Resources\martinguitar.jpg" />
     <BundleResource Include="Resources\twinriverstubing.jpg" />
+    <BundleResource Include="Resources\snow.jpg" />
+    <BundleResource Include="Resources\EastonPa.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

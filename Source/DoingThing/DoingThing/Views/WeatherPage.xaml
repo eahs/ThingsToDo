@@ -7,6 +7,10 @@
 
     <SearchBar Placeholder="Search..." />
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Open In Browser"  Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
     <Grid>
         <WebView Source="https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a" />
     </Grid>

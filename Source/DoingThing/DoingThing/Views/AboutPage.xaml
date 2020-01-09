@@ -21,7 +21,7 @@
         <StackLayout BackgroundColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <ContentView Padding="0,40,0,0" VerticalOptions="FillAndExpand">
-                    <Image Source="EastonLogo.jpeg" VerticalOptions="Center" HeightRequest="199" />
+                    <Image Source="EastonPa.jpeg" VerticalOptions="Center" HeightRequest="199" />
                 </ContentView>
             </StackLayout>
             <Button Text="        Easton Homepage        " FontSize="20"
@@ -47,7 +47,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="Creators: Daniel Cichocki, Tyler Ruggiero, Dylan McIntyre and Jonathan Araya" />
+                                <Span Text="Creators: Daniel Cichocki, Tyler Ruggiero, Dylan McIntyre and Jonathan Araya." />
                                 <Span Text=" " />
                                 <Span Text="" FontAttributes="Bold" />
                                 <Span Text="" />
@@ -59,7 +59,16 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="The DoThings app's purpose is to locate and display fun activities within Easton" />
+                                <Span Text="The DoThings app's purpose is to locate and display fun activities within Easton." /> 
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>  
+                                <Span Text="All credit for the weather goes to weather.com and their associates. The weather located in the DoThings app is a root from the https://www.weather.com website." />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
