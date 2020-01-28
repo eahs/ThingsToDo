@@ -3,6 +3,8 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using DoingThing.Services;
 using DoingThing.Views;
+using Plugin.SimpleAudioPlayer;
+using System.Reflection;
 
 namespace DoingThing
 {
@@ -17,9 +19,31 @@ namespace DoingThing
             MainPage = new AppShell();
         }
 
+        public static void Player()
+        {
+            var player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            if (player.IsPlaying == false)
+            {
+                player.Load("LaDanseMacabre.mp3");
+                player.Play();
+                player.Loop = true;
+            }
+            else player.Stop();
+        }
+        public static void DarkMode()
+        {
+
+        }
         protected override void OnStart()
         {
-            // Handle when your app starts
+
+        }
+
+        private object GetStreamFromFile(string filename)
+        {
+            var assembly = typeof(App).GetTypeInfo().Assembly;
+            var stream = assembly.GetManifestResourceStream("DoingThing" + filename);
+            return stream;
         }
 
         protected override void OnSleep()

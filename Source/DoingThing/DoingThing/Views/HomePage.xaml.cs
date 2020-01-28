@@ -11,9 +11,11 @@ namespace DoingThing.Views
         {
             InitializeComponent();
         }
-        async void Start(object sender, EventArgs e)
+
+
+        public void Start(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AppShell());
+            Navigation.PushAsync(new AppShell());
         }
     }
 }

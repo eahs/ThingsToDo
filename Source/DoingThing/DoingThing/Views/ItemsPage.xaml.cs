@@ -11,6 +11,7 @@ using DoingThing.Models;
 using DoingThing.Views;
 using DoingThing.ViewModels;
 
+
 namespace DoingThing.Views
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
@@ -22,6 +23,13 @@ namespace DoingThing.Views
 
         public ItemsPage()
         {
+            /*var player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+
+
+            player.Load("LaDanseMacabre.mp3");
+            player.Play();
+            player.Loop = true;*/
+
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();

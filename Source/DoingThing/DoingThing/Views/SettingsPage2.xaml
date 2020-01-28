@@ -17,7 +17,7 @@
                    Margin="10, 0">
             <TableRoot>
                 <TableSection>
-                    <SwitchCell Text="Switch Cell" />
+                    <SwitchCell Text="" />
                 </TableSection>
             </TableRoot>
         </TableView>
