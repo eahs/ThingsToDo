@@ -23,7 +23,7 @@ namespace DoingThing.Views
 
         public void Clicked(object sender, EventArgs e)
         {
-            CrossShare.Current.OpenBrowser("https://www.eastonsd.org");
+            CrossShare.Current.OpenBrowser("https://www.easton-pa.com/");
         }
         
     }

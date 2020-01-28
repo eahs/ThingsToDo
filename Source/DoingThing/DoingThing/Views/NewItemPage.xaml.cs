@@ -23,7 +23,8 @@ namespace DoingThing.Views
             {
                 Text = "Location name",
                 Description = "This is a location description",
-                Location = "This is an address"
+                Location = "This is an address",
+                Hours = "This is the location's hours"
             };
 
             BindingContext = this;

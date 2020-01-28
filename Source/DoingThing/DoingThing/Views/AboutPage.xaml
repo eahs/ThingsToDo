@@ -68,7 +68,7 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>  
-                                <Span Text="All credit for the weather goes to weather.com and their associates. The weather located in the DoThings app is a root from the https://www.weather.com website." />
+                                <Span Text="" />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
