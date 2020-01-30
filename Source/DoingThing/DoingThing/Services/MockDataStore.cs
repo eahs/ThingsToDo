@@ -35,7 +35,8 @@ namespace DoingThing.Services
                 , Url= "bushkill.jpg"
                 , FC = "40.695932"
                 , SC = "-75.2054542"
-
+                , Hours =
+                "Open All Hours"
                 },
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Crayola Factory", Description="Take a tour inside of the crayola factory and see how crayons are made."
