@@ -18,6 +18,13 @@
                         Clicked="A"
                     />-->
 
+        <!--<Label IsVisible="false"  Text="{Binding Item.Website}"
+                               x:Name="EntryWeb" />
+        <Button Text="Open Website"  
+                                BackgroundColor="Orange"
+                                TextColor="White"
+                            Clicked="Site_Clicked" />-->
+
                 <ScrollView>
                     <StackLayout Padding="0">
                         <Entry x:Name="EntryName" IsVisible="False" Keyboard="Text" Text="{Binding Item.Text}" />

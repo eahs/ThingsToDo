@@ -5,7 +5,7 @@ using Xamarin.Forms.Xaml;
 using DoingThing.Models;
 using DoingThing.ViewModels;
 using Xamarin.Essentials;
- 
+using Plugin.Share;
 
 namespace DoingThing.Views
 {
@@ -31,6 +31,7 @@ namespace DoingThing.Views
             {
                 Text = "Item 1",
                 Description = "This is an item description.",
+                Website = "This is a web page",
                 Location = "This is a location.",
                 Url = "This is a Image.",
                 FC = "These are the first coords",
@@ -41,9 +42,14 @@ namespace DoingThing.Views
 
 
             viewModel = new ItemDetailViewModel(item);
-            BindingContext = viewModel;
+            BindingContext = viewModel; 
         }
 
+        //public void Site_Clicked(object sender, EventArgs e)
+        //{
+             
+        //    CrossShare.Current.OpenBrowser(Item.Website);
+        //}
 
         private async void ButtonOpenCoords_Clicked(object sender, EventArgs e)
         {
