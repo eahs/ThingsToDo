@@ -12,12 +12,40 @@ namespace DoingThing.Views
         public WeatherPage()
         {
             InitializeComponent();
+            //url.Text = "https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a";
+            //Browser.Source = url.Text;
         }
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await CrossShare.Current.OpenBrowser("https://www.google.com/maps/place/Easton,+PA/@40.6789302,-75.2717212,13z/data=!3m1!4b1!4m5!3m4!1s0x89c46b821870585f:0x37203227748fc82b!8m2!3d40.688432!4d-75.2207323");
+            await CrossShare.Current.OpenBrowser("https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a");
         }
 
+        //void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        //{
+        //    LoadingLabel.IsVisible = false;
+        //}
+
+        //void Handle_Navigating(object sender, Xamarin.Forms.WebNavigatingEventArgs e)
+        //{
+        //    LoadingLabel.IsVisible = true;
+        //}
+
+        //void Go_Clicked(object sender, System.EventArgs e)
+        //{
+        //    Browser.Source = url.Text;
+        //}
+
+        //void Forward_Clicked(object sender, System.EventArgs e)
+        //{
+        //    if (Browser.CanGoForward)
+        //        Browser.GoForward();
+        //}
+
+        //void Back_Clicked(object sender, System.EventArgs e)
+        //{
+        //    if (Browser.CanGoBack)
+        //        Browser.GoBack();
+        //}
     }
 }

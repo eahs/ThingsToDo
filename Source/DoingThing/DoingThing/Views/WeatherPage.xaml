@@ -1,19 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.WeatherPage" xmlns:vm="clr-namespace:DoingThing.ViewModels" Title="Weather">
+     
 
-    <ContentPage.BindingContext>
-        <vm:WeatherViewModel />
-    </ContentPage.BindingContext>
+    <!--<StackLayout Padding="5" Spacing="5" Orientation="Horizontal">  
+            <Button Text="&lt;" HeightRequest="40" WidthRequest="40" Clicked="Back_Clicked"/>
+            <Button Text="&gt;" HeightRequest="40" WidthRequest="40" Clicked="Forward_Clicked"/> 
+                <Entry x:Name="url"  HorizontalOptions="EndAndExpand" />
+          <SearchBar Placeholder="Search..." x:Name="url"  HorizontalOptions="FillAndExpand" /> 
+                <Button Text="Go" HeightRequest="40" HorizontalOptions="End" Clicked="Go_Clicked"/>
+          
+            <Label x:Name="LoadingLabel" IsVisible="false"/>
+        <Grid>
+            <WebView x:Name="Browser" Navigating="Handle_Navigating" Navigated="Handle_Navigated"/>
+        </Grid>
+    </StackLayout>--> 
 
-    <SearchBar Placeholder="Search..." />
+
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Open In Browser"  Clicked="AddItem_Clicked" />
     </ContentPage.ToolbarItems>
 
-<ContentPage.Content>
+
+    <ContentPage.BindingContext>
+        <vm:WeatherViewModel />
+    </ContentPage.BindingContext>
+
+<ContentPage.Content> 
     <Grid>
         <WebView Source="https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a" />
     </Grid>
 </ContentPage.Content>
+
 </ContentPage>
+

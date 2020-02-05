@@ -53,7 +53,7 @@ namespace DoingThing.Services
                 " Thu 10:00AM-4:00PM \n" +
                 " Fri 10:00AM-4:00PM \n" +
                 " Sat 10:00AM-6:00PM \n"
-                }, 
+                },
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fishing", Description="Go fishing and catch some trout down at the Delaware river canal."
                 , Location= "Philipsburg boat ramp, Delaware River, Riverside Way, Philipsburg, NJ"
@@ -219,7 +219,7 @@ namespace DoingThing.Services
                 , Dollar = "Dollar.png"
                 ,
                     Hours =
-                "N/A"}
+                "N/A"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Jacobsburg State Park", Description="Jacobsburg Environmental Education Center is a 1,168-acre Pennsylvania state park near Wind Gap, in Bushkill Township, Northampton County in Pennsylvania, in the United States. The Jacobsburg National Historic District is almost entirely surrounded by the park."
                 , Location= "649 S 10th St, Allentown, PA 18103 "
@@ -227,8 +227,8 @@ namespace DoingThing.Services
                 , FC = "40.7844359"
                 , SC = "-75.2929651"
                 ,
-                Hours =
-                "N/A"}
+                 Hours =
+                "N/A"},
 
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Blue Mountain Resort", Description="Blue Mountain Resort is a ski resort located near Palmerton, Pennsylvania, on Blue Mountain in the northern part of the Lehigh Valley, in Pennsylvania. Blue Mountain serves the Allentown, Philadelphia, New York City, and Wilmington urban areas, as well as Carbon County, Schuylkill County, and the Hazleton area. "
                 , Location= "1660 Blue Mountain Dr, Palmerton, PA 18071"
