@@ -140,6 +140,7 @@
     <BundleResource Include="Resources\twinriverstubing.jpg" />
     <BundleResource Include="Resources\snow.jpg" />
     <BundleResource Include="Resources\EastonPa.jpeg" />
+    <BundleResource Include="Resources\LaDanseMacabre.mp3" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

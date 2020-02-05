@@ -14,7 +14,7 @@ namespace DoingThing.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new SettingsPage()));
+            await Navigation.PushModalAsync(new NavigationPage(new SettingsPage2()));
         }
         public AboutPage()
         {
