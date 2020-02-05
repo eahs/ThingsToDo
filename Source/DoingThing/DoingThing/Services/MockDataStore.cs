@@ -209,7 +209,42 @@ namespace DoingThing.Services
                 " Wed 8:00AM-5:00PM \n" +
                 " Thu 8:00AM-5:00PM \n" +
                 " Fri 8:00AM-5:00PM \n" +
-                " Sat Currently Unavailable \n" }
+                " Sat Currently Unavailable \n" },
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Lehigh Valley Grand Prix", Description="High-speed, indoor go-karting for all ages on a 1/4-mile track, as well as a casual bar & grill."
+                , Location= "649 S 10th St, Allentown, PA 18103 "
+                , Url= ""
+                , FC = "40.5949163"
+                , SC = "-75.5085167"
+                , Dollar = "Dollar.png"
+                ,
+                    Hours =
+                "N/A"}
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Jacobsburg State Park", Description="Jacobsburg Environmental Education Center is a 1,168-acre Pennsylvania state park near Wind Gap, in Bushkill Township, Northampton County in Pennsylvania, in the United States. The Jacobsburg National Historic District is almost entirely surrounded by the park."
+                , Location= "649 S 10th St, Allentown, PA 18103 "
+                , Url= ""
+                , FC = "40.7844359"
+                , SC = "-75.2929651"
+                ,
+                Hours =
+                "N/A"}
+
+                new Item { Id = Guid.NewGuid().ToString(), Text = "Blue Mountain Resort", Description="Blue Mountain Resort is a ski resort located near Palmerton, Pennsylvania, on Blue Mountain in the northern part of the Lehigh Valley, in Pennsylvania. Blue Mountain serves the Allentown, Philadelphia, New York City, and Wilmington urban areas, as well as Carbon County, Schuylkill County, and the Hazleton area. "
+                , Location= "1660 Blue Mountain Dr, Palmerton, PA 18071"
+                , Url= ""
+                , FC = "40.81073"
+                , SC = "-75.520864"
+                , Dollar = "Dollar.png"
+                ,
+                    Hours =
+                " Sun 8:00AM-10:00PM \n" +
+                " Mon 9:00AM-9:00PM \n" +
+                " Tue 9:00AM-9:00PM \n" +
+                " Wed 9:00AM-9:00PM \n" +
+                " Thu 9:00AM-10:00PM \n" +
+                " Fri 9:00AM-10:00PM \n" +
+                " Sat 8:00AM-10:00PM" },
             };
         }
 

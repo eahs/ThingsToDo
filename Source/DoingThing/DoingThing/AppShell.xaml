@@ -8,7 +8,7 @@
      <Color x:Key="NavigationPrimary">#999999</Color> 
             <!--<Image Source="snow.jpg" x:Key="NavigationPrimary" />-->
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="Shell.BackgroundColor" Value="#FF5733" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="Black" />
@@ -32,7 +32,7 @@
             <ShellContent ContentTemplate="{DataTemplate local:WeatherPage}" />
         </Tab>
 
-        <Tab Title="Map" Icon="Weather.png">
+        <Tab Title="Map" Icon="map.png">
             <ShellContent ContentTemplate="{DataTemplate local:MapPage}" />
         </Tab>
 
