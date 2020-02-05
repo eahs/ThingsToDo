@@ -3,15 +3,18 @@ using Xamarin.Forms;
 
 namespace DoingThing.Views
 {
-    public partial class SettingsPage2 : ContentPage
+    public partial class SettingsPage : ContentPage
     {
-        public SettingsPage2()
+        public void Page_Back(object sender, System.EventArgs e)
         {
-            async void Cancel_Click(object sender, EventArgs e)
-            {
-                ToolbarItem item = (ToolbarItem)sender;
-                //await Navigation.PushModalAsync(new NavigationPage(new AboutPage()));
-            }
+            Navigation.PushModalAsync(new NavigationPage(new AppShell()));
+        }
+
+        public SettingsPage()
+        {
+            InitializeComponent();
+
+            
 
             Label header = new Label
             {

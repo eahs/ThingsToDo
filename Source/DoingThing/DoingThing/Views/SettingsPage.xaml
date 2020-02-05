@@ -1,21 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FormsGallery.XamlExamples.SwitchCellDemoPage" 
+             x:Class="DoingThing.Views.SettingsPage"
              xmlns:vm="clr-namespace:DoingThing.ViewModels" Title="Weather">
 
 
-      <!--<ContentPage.ToolbarItems>
-        <ToolbarItem Text="Back" Clicked="Cancel_Click" />
-    </ContentPage.ToolbarItems>-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="Page_Back" />
+    </ContentPage.ToolbarItems>
 
     <!--
     <ContentPage.Content>
         <Switch x:Name="switch1" OnColor="#24A0ED" ThumbColor="White" IsToggled="False" /> 
     </ContentPage.Content>-->
 
+   
+    <StackLayout Padding="5" >
 
-    <StackLayout>
+         
+
+
         <Label Text="SwitchCell"
                FontSize="50"
                FontAttributes="Bold"
@@ -29,7 +33,15 @@
                 </TableSection>
             </TableRoot>
         </TableView>
+        <Button
+             Text="   Go Back   "
+             HorizontalOptions="Center"
+             TextColor="White"
+             BackgroundColor="Red" 
+             Clicked="Page_Back"/> 
     </StackLayout>
+
+
 
 </ContentPage>
 
