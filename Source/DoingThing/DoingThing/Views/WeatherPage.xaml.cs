@@ -16,20 +16,20 @@ namespace DoingThing.Views
             //Browser.Source = url.Text;
         }
 
-        //async void Weather(object sender, EventArgs e)
-        //{
-        //    await CrossShare.Current.OpenBrowser("https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a");
-        //}
+        async void AddItem_Clicked(object sender, EventArgs e)
+        {
+            await CrossShare.Current.OpenBrowser("https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a");
+        }
 
         //async void Accuweather(object sender, EventArgs e)
         //{
         //    await CrossShare.Current.OpenBrowser("https://www.accuweather.com/en/us/easton/18042/weather-forecast/329553");
         //}
 
-        void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
-        {
-            LoadingLabel.IsVisible = false;
-        }
+        //void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        //{
+        //    LoadingLabel.IsVisible = false;
+        //}
 
         //void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
         //{
@@ -58,5 +58,5 @@ namespace DoingThing.Views
         //        Browser.GoBack();
         //}
     }
-     
+
 }
