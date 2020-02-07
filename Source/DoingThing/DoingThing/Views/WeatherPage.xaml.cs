@@ -12,8 +12,8 @@ namespace DoingThing.Views
         public WeatherPage()
         { 
             InitializeComponent();
-            url.Text = "https://www.accuweather.com";
-            Browser.Source = url.Text;
+            //url.Text = "https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a";
+            //Browser.Source = url.Text;
         }
 
         //async void Weather(object sender, EventArgs e)
@@ -31,28 +31,32 @@ namespace DoingThing.Views
             LoadingLabel.IsVisible = false;
         }
 
-        void Handle_Navigating(object sender, Xamarin.Forms.WebNavigatingEventArgs e)
-        {
-            LoadingLabel.IsVisible = true;
-        }
+        //void Handle_Navigated(object sender, Xamarin.Forms.WebNavigatedEventArgs e)
+        //{
+        //    LoadingLabel.IsVisible = false;
+        //}
 
-        void Go_Clicked(object sender, System.EventArgs e)
-        {
-            Browser.Source = url.Text;
-        }
+        //void Handle_Navigating(object sender, Xamarin.Forms.WebNavigatingEventArgs e)
+        //{
+        //    LoadingLabel.IsVisible = true;
+        //}
 
-        void Forward_Clicked(object sender, System.EventArgs e)
-        {
-            if (Browser.CanGoForward)
-                Browser.GoForward();
-        }
+        //void Go_Clicked(object sender, System.EventArgs e)
+        //{
+        //    Browser.Source = url.Text;
+        //}
 
-        void Back_Clicked(object sender, System.EventArgs e)
-        {
-            if (Browser.CanGoBack)
-                Browser.GoBack();
-        }
+        //void Forward_Clicked(object sender, System.EventArgs e)
+        //{
+        //    if (Browser.CanGoForward)
+        //        Browser.GoForward();
+        //}
 
+        //void Back_Clicked(object sender, System.EventArgs e)
+        //{
+        //    if (Browser.CanGoBack)
+        //        Browser.GoBack();
+        //}
     }
      
 }

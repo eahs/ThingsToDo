@@ -1,48 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.WeatherPage" xmlns:vm="clr-namespace:DoingThing.ViewModels" Title="Weather">
+     
+
+    <!--<StackLayout Padding="5" Spacing="5" Orientation="Horizontal">  
+            <Button Text="&lt;" HeightRequest="40" WidthRequest="40" Clicked="Back_Clicked"/>
+            <Button Text="&gt;" HeightRequest="40" WidthRequest="40" Clicked="Forward_Clicked"/> 
+                <Entry x:Name="url"  HorizontalOptions="EndAndExpand" />
+          <SearchBar Placeholder="Search..." x:Name="url"  HorizontalOptions="FillAndExpand" /> 
+                <Button Text="Go" HeightRequest="40" HorizontalOptions="End" Clicked="Go_Clicked"/>
+          
+            <Label x:Name="LoadingLabel" IsVisible="false"/>
+        <Grid>
+            <WebView x:Name="Browser" Navigating="Handle_Navigating" Navigated="Handle_Navigated"/>
+        </Grid>
+    </StackLayout>--> 
+
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Open In Browser"  Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
 
     <ContentPage.BindingContext>
         <vm:WeatherViewModel />
     </ContentPage.BindingContext>
 
+<ContentPage.Content> 
+    <Grid>
+        <WebView Source="https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a" />
+    </Grid>
+</ContentPage.Content>
 
-    <!--<ContentPage.Content>
-        <StackLayout Orientation="Horizontal" Spacing="5" Padding="7">
-
-            <Button Text="       Weather       " FontSize="20"
-                       Clicked="Weather"
-                       HorizontalOptions="CenterAndExpand"   
-                       VerticalOptions="Start"
-                       BackgroundColor="#769DF2"
-                       TextColor="White"/>
-
-            <Button Text="     AccuWeather     " FontSize="20"
-                        Clicked="Accuweather"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="Start"
-                        BackgroundColor="	#ff9e00"
-                        TextColor="White"/>
-
-
-
-             <Grid>
-                <WebView Source="https://weather.com/weather/today/l/39e769d524266cb2052b2020462bac4f1f3cf871cec68b215d449ed45109f12a" />
-             </Grid>
-
-        </StackLayout>
-    </ContentPage.Content>-->
-
-    
-<StackLayout Padding="5" Spacing="5"> 
-    <StackLayout Orientation="Horizontal">
-    <Button Text="&lt;" HeightRequest="40" WidthRequest="40" Clicked="Back_Clicked"/>
-    <Button Text="&gt;" HeightRequest="40" WidthRequest="40" Clicked="Forward_Clicked"/> 
-        <Entry x:Name="url"  HorizontalOptions="EndAndExpand" />
-        <Button Text="Go" HeightRequest="40" HorizontalOptions="End" Clicked="Go_Clicked"/>
-    </StackLayout>
-    <Label x:Name="LoadingLabel" IsVisible="false"/>
-    <WebView x:Name="Browser" HeightRequest="1000" WidthRequest="1000" Navigating="Handle_Navigating" Navigated="Handle_Navigated"/>
-</StackLayout> 
-   
-     
 </ContentPage>
+

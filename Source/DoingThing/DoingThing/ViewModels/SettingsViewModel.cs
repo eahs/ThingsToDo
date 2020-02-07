@@ -5,11 +5,11 @@ using Xamarin.Forms;
 
 namespace DoingThing.ViewModels
 {
-    public class MapViewModel : BaseViewModel
+    public class SettingsViewModel : BaseViewModel
     {
-        public MapViewModel()
+        public SettingsViewModel()
         {
-            Title = " Map";
+            Title = " Settings";
 
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
         }

@@ -1,9 +1,51 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DoingThing.Views.SettingsPage">
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DoingThing.Views.SettingsPage"
+             xmlns:vm="clr-namespace:DoingThing.ViewModels" Title="Weather">
+
+
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Back" Clicked="Cancel_Click" />
+        <ToolbarItem Text="Back" Clicked="Page_Back" />
     </ContentPage.ToolbarItems>
+
+    <!--
     <ContentPage.Content>
         <Switch x:Name="switch1" OnColor="#24A0ED" ThumbColor="White" IsToggled="False" /> 
-    </ContentPage.Content>
+    </ContentPage.Content>-->
+
+   
+    <StackLayout Padding="5" >
+
+         
+
+
+        <Label Text="SwitchCell"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <TableView Intent="Form"
+                   Margin="10, 0">
+            <TableRoot>
+                <TableSection>
+                    <SwitchCell Text="" />
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button
+             Text="   Go Back   "
+             HorizontalOptions="Center"
+             TextColor="White"
+             BackgroundColor="Red" 
+             Clicked="Page_Back"/> 
+    </StackLayout>
+
+
+
 </ContentPage>
+
+
+
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DoingThing.Views.SettingsPage">-->
+ 

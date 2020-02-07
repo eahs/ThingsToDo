@@ -1,30 +1,13 @@
-﻿
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.MapPage" xmlns:vm="clr-namespace:DoingThing.ViewModels"  Title="{Binding Title}" x:Name="MapMapPage" >
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.MapPage" xmlns:vm="clr-namespace:DoingThing.ViewModels" Title="Map">
 
-        <ContentPage.BindingContext>
-            <vm:MapViewModel />
-        </ContentPage.BindingContext>
+    <ContentPage.BindingContext>
+        <vm:MapViewModel />
+    </ContentPage.BindingContext>
 
-        
 
-    <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Padding="10">
-                <Label Text="Name" />
-                <Entry x:Name="EntryName" Keyboard="Text" Text="Easton, PA" />
-
-                <Label Text="Lattitude" Margin="0,24,0,0" />
-                <Entry Keyboard="Numeric" Text="40.6884"
-                       x:Name="EntryLatitude" />
-
-                <Label Text="Longitude" />
-                <Entry Keyboard="Numeric" Text="-75.2207"
-                       x:Name="EntryLongitude" />
-                <Button Text="Open coordinates" x:Name="ButtonOpenCoords"
-                    Clicked="ButtonOpenCoords_Clicked" />
-
-            </StackLayout>
-        </ScrollView>
-        </ContentPage.Content>
-
+    <Grid>
+        <WebView Source="https://www.google.com/maps/place/Easton,+PA/@40.6789302,-75.2717212,13z/data=!3m1!4b1!4m5!3m4!1s0x89c46b821870585f:0x37203227748fc82b!8m2!3d40.688432!4d-75.2207323" />
+    </Grid>
+     
 </ContentPage>
