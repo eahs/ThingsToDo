@@ -14,7 +14,8 @@ namespace DoingThing
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell();
+
+            MainPage = new AppShell(new AboutPage());
         }
 
         protected override void OnStart()

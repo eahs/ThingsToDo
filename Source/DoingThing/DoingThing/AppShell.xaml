@@ -5,10 +5,10 @@
 
     <Shell.Resources>
         <ResourceDictionary>
-     <Color x:Key="NavigationPrimary">#999999</Color> 
+     <Color x:Key="NavigationPrimary">#B20000</Color> 
             <!--<Image Source="snow.jpg" x:Key="NavigationPrimary" />-->
             <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="#FF5733" />
+                <Setter Property="Shell.BackgroundColor" Value="#B20000" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="Black" />

@@ -5,9 +5,9 @@ namespace DoingThing.Views
 {
     public partial class SettingsPage : ContentPage
     {
-        public void Page_Back(object sender, System.EventArgs e)
+        async void Page_Back(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new NavigationPage(new AppShell()));
+            await Navigation.PushModalAsync(new AppShell());
         }
 
         public SettingsPage()
