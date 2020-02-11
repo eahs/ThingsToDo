@@ -1,5 +1,5 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.ItemDetailPage" Title="{Binding Title}">
-    <StackLayout Spacing="25" Padding="10"> 
+    <StackLayout Spacing="15" Padding="10"> 
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize=" 25 " FontAttributes="Bold" />
 
         <ContentView>
@@ -39,7 +39,7 @@
                                 BackgroundColor="#200080"
                                 TextColor="White"
                             Clicked="ButtonOpenCoords_Clicked" />
-                        <Label Text="{Binding Item.Hours}" />
+                        <Label Text="{Binding Item.Hours}" VerticalOptions="Fill"/>
 
                     </StackLayout>
                 </ScrollView>
@@ -47,8 +47,8 @@
                     <Image
                         Source="{Binding Item.Url}"
                         HorizontalOptions="FillAndExpand"
-                        VerticalOptions="EndAndExpand"
-                        HeightRequest="250"
+                        VerticalOptions="Center"
+                        HeightRequest="220"
                          
                     />
 

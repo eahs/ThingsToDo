@@ -19,6 +19,7 @@
     <Compile Remove="Views\ButtonCode.cs" />
     <Compile Remove="Views\ItemDetailPage%282%29.xaml.cs" />
     <Compile Remove="Views\MapPage.cs" />
+    <Compile Remove="Plugin\SimpleAudioPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\ItemDetailPage %28copy%29.xaml.cs">
@@ -36,5 +37,8 @@
     <Compile Update="Views\MapPage.xaml.cs">
       <DependentUpon>MapPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="player\" />
   </ItemGroup>
 </Project>
