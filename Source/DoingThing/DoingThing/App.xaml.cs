@@ -5,6 +5,9 @@ using DoingThing.Services;
 using DoingThing.Views;
 using Plugin.SimpleAudioPlayer;
 using System.Reflection;
+using System.Data;
+using System.Numerics;
+using ObjCRuntime;
 
 namespace DoingThing
 {
@@ -28,15 +31,30 @@ namespace DoingThing
                 player.Play();
                 player.Loop = true;
             }
-            else player.Stop();
-        }
-        public static void DarkMode()
-        {
+            else if(player.IsPlaying == true)
+            player.Stop();
+         }
 
+        public static bool Toggle(bool current)
+        {
+            if (current == false)
+            {
+                return true;
+            }
+            else return false;
         }
+
+        public static void DarkMode()
+        { 
+            
+        }
+
         protected override void OnStart()
         {
-
+            var player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
+            player.Load("LaDanseMacabre.mp3");
+            player.Play();
+            player.Loop = true;
         }
 
         private object GetStreamFromFile(string filename)

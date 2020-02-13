@@ -6,11 +6,7 @@ namespace DoingThing.Views
     {
         public SettingsPage2()
         {
-            async void Cancel_Click(object sender, EventArgs e)
-            {
-                ToolbarItem item = (ToolbarItem)sender;
-                //await Navigation.PushModalAsync(new NavigationPage(new AboutPage()));
-            }
+            Boolean toggle = App.Toggle(true);
 
             Label header = new Label
             {
@@ -23,6 +19,7 @@ namespace DoingThing.Views
             SwitchCell Music = new SwitchCell()
             {
                 Text = "Music",
+                On = true,
             };
             SwitchCell DarkMode = new SwitchCell()
             {
@@ -40,11 +37,19 @@ namespace DoingThing.Views
                 },
                 Intent = TableIntent.Form,
             };
-
-            Music.OnChanged += (sender, e) =>
+            if (Music.On == true)
             {
-                App.Player();
-            };
+                Music.OnChanged += (sender, e) =>
+                {
+                    App.Player();
+                };
+            }
+             
+                DarkMode.OnChanged += (sender, e) =>
+                {
+                    App.DarkMode();
+                };
+           
 
             // Build the page.
             Title = "";

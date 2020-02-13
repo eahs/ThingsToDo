@@ -3,10 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FormsGallery.XamlExamples.SwitchCellDemoPage"
              Title="SwitchCell Demo">
-    <ContentPage.ToolbarItems>
-        <!--<ToolbarItem Text="Back"
-                     Clicked = "Cancel_Click" />-->
-    </ContentPage.ToolbarItems>
+   
     <StackLayout>
         <Label Text="SwitchCell"
                FontSize="50"
