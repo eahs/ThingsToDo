@@ -19,7 +19,7 @@ namespace DoingThing.Views
             SwitchCell Music = new SwitchCell()
             {
                 Text = "Music",
-                On = true,
+                
             };
             SwitchCell DarkMode = new SwitchCell()
             {

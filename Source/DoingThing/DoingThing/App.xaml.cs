@@ -31,8 +31,7 @@ namespace DoingThing
                 player.Play();
                 player.Loop = true;
             }
-            else if(player.IsPlaying == true)
-            player.Stop();
+            else player.Stop();
          }
 
         public static bool Toggle(bool current)
