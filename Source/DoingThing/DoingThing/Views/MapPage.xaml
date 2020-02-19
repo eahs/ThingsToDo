@@ -1,13 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="DoingThing.Views.MapPage" xmlns:vm="clr-namespace:DoingThing.ViewModels" Title="Map">
-
-    <ContentPage.BindingContext>
-        <vm:MapViewModel />
-    </ContentPage.BindingContext>
-
-
-    <Grid>
-        <WebView Source="https://www.google.com/maps/place/Easton,+PA/@40.6789302,-75.2717212,13z/data=!3m1!4b1!4m5!3m4!1s0x89c46b821870585f:0x37203227748fc82b!8m2!3d40.688432!4d-75.2207323" />
-    </Grid>
-     
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="DoingThing.Views.MapPage">
+    <StackLayout VerticalOptions="StartAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Padding="30">
+        <maps:Map x:Name="MyMap"
+                  WidthRequest="960"
+                  HeightRequest="100"
+                  IsVisible="True"
+                  MapType="Street" />
+    </StackLayout>
 </ContentPage>
