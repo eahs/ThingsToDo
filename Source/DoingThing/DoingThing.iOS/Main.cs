@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace EastonCityGuide.iOS
+namespace DoingThing.iOS
 {
     public class Application
     {
