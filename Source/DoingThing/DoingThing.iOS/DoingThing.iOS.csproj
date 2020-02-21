@@ -120,7 +120,29 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="Resources\eastonlogo.png" />
+    <BundleResource Include="Resources\bushkill.jpg" />
+    <BundleResource Include="Resources\crayola.jpg" />
+    <BundleResource Include="Resources\dutchSprings.jpg" />
+    <BundleResource Include="Resources\canal.jpg" />
+    <BundleResource Include="Resources\freefall.jpg" />
+    <BundleResource Include="Resources\regalCinema.jpg" />
+    <BundleResource Include="Resources\stateTheater.jpg" />
+    <BundleResource Include="Resources\philipsburgRamp.jpg" />
+    <BundleResource Include="Resources\bushkillPark.jpg" />
+    <BundleResource Include="Resources\map.png" />
+    <BundleResource Include="Resources\EastonMap.png" />
+    <BundleResource Include="Resources\EastonLogo.jpeg" />
+    <BundleResource Include="Resources\Weather.png" />
+    <BundleResource Include="Resources\Dollar.png" />
+    <BundleResource Include="Resources\Windows_Settings_app_icon.png" />
+    <BundleResource Include="Resources\kleinfarms.jpg" />
+    <BundleResource Include="Resources\lostrivercaverns.jpg" />
+    <BundleResource Include="Resources\martinguitar.jpg" />
+    <BundleResource Include="Resources\twinriverstubing.jpg" />
+    <BundleResource Include="Resources\snow.jpg" />
+    <BundleResource Include="Resources\EastonPa.jpeg" />
+    <BundleResource Include="Resources\LaDanseMacabre.mp3" />
+    <BundleResource Include="Resources\download.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
