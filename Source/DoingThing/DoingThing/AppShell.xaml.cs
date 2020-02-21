@@ -11,11 +11,6 @@ namespace DoingThing
         {
             InitializeComponent();
         }
-
-        public AppShell(Views.AboutPage aboutPage)
-        {
-            InitializeComponent();
-        }
     }
 }
 

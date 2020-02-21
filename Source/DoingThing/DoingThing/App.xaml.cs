@@ -16,7 +16,7 @@ namespace DoingThing
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AppShell(new AboutPage());
+            MainPage = new AppShell();
         }
 
         public static void Player()

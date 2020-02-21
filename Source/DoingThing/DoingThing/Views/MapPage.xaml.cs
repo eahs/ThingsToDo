@@ -27,7 +27,7 @@ namespace DoingThing.Views
                 VerticalOptions = LayoutOptions.FillAndExpand
 
             };
-            //map.MoveToRegion(new MapSpan(new Position(40.691216, -75.209130), 0.01, 0.01));
+            map.MoveToRegion(new MapSpan(new Position(40.691216, -75.209130), 0.01, 0.01));
 
             StackLayout slMap = new StackLayout
             {

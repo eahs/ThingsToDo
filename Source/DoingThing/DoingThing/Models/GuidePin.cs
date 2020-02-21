@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using Xamarin.Forms.Maps;
 
 namespace DoingThing.Models
@@ -13,4 +13,4 @@ namespace DoingThing.Models
             Address = address;
         }
     }
-}
+}*/
