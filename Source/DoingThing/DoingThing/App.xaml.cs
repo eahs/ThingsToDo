@@ -30,6 +30,15 @@ namespace DoingThing
             }
             else player.Stop();
         }
+        public static bool Toggle(bool current)
+        {
+            if (current == false)
+            {
+                return true;
+            }
+            else return false;
+        }
+
         public static void DarkMode()
         {
 

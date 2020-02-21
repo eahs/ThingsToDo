@@ -258,6 +258,19 @@ namespace DoingThing.Services
                 " Thu 9:00AM-10:00PM \n" +
                 " Fri 9:00AM-10:00PM \n" +
                 " Sat 8:00AM-10:00PM" },
+
+                 new Item { Id = Guid.NewGuid().ToString(), Text = "Simon Silk Mill", Description="A creative live/work complex and cultural redevelopment project."
+                , Website="https://www.google.com"
+                , Location= "Simon Silk Mill, 1262 Simon Blvd, B104 Easton, PA 18042"
+                , Url= "download.jpg"
+                , FC = "40.604444"
+                , SC = "-75.393611"
+                , Hours =
+                " Mon 8:30am-4:30PM \n" +
+                " Tue 8:30AM-4:30PM \n" +
+                " Wed 8:30AM-4:30PM \n" +
+                " Thu 8:30AM-4:30PM \n" +
+                " Fri 8:30AM-4:30PM \n"},
             };
         }
 

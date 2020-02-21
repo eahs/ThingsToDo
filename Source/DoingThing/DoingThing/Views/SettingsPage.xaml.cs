@@ -12,7 +12,8 @@ namespace DoingThing.Views
 
         public SettingsPage()
         {
-            InitializeComponent();
+			Boolean toggle = App.Toggle(true);
+			InitializeComponent();
              
 
             Label header = new Label
@@ -43,7 +44,7 @@ namespace DoingThing.Views
                 },
                 Intent = TableIntent.Form,
             };
-
+            if(Music.On == toggle)
             Music.OnChanged += (sender, e) =>
             {
                 App.Player();
