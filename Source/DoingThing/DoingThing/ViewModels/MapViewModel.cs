@@ -9,7 +9,7 @@ namespace DoingThing.ViewModels
     {
         public MapViewModel()
         {
-            Title = " Map";
+            Title = "Map";
 
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
         }
