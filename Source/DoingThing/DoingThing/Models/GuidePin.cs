@@ -4,13 +4,15 @@ using Xamarin.Forms.Maps;
 namespace DoingThing.Models
 {
     public class GuidePin : Pin
-    {
-        public GuidePin(Position coordinates, string label, string address) 
+    { 
+
+ 
+
+        public GuidePin(Position coordinates, string label ) 
         {
             Type = PinType.Place;
             Position = coordinates;
-            Label = label;
-            Address = address;
+            Label = label; 
         }
     }
 }
