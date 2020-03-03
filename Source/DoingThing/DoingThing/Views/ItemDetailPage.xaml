@@ -35,7 +35,7 @@
                         <Label IsVisible="false" Text="{Binding Item.SC}"
                                x:Name="EntryLongitude" />
 
-                        <Button Text="Open Location" x:Name="ButtonOpenCoords"
+                        <Button Text="Open In Browser" x:Name="ButtonOpenCoords"
                                 BackgroundColor="#200080"
                                 TextColor="White"
                             Clicked="ButtonOpenCoords_Clicked" />

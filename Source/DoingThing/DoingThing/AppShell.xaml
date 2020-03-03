@@ -6,15 +6,17 @@
     <Shell.Resources>
         <ResourceDictionary> 
             <!--<Image Source="snow.jpg" x:Key="NavigationPrimary" />-->
+
+            <Color x:Key="NavigationPrimary">#02075D</Color>
             <Style x:Key="BaseStyle" TargetType="Element">
-                <!--<Setter Property="Shell.BackgroundColor" Value="" />-->
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="Black" />
                 <Setter Property="Shell.UnselectedColor" Value="Black" />
                 <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White" />
-                <Setter Property="Shell.TabBarUnselectedColor" Value="Black" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="DimGray" />
                 <Setter Property="Shell.TabBarTitleColor" Value="White" /> 
             </Style>
             <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />

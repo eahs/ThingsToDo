@@ -64,5 +64,6 @@ namespace DoingThing
         {
             // Handle when your app resumes
         }
+
     }
 }
