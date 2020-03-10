@@ -11,7 +11,7 @@ using System.Windows.Input;
 using DoingThing.Helpers;
 using System.Threading.Tasks;
 
-namespace FBLAManager.ViewModels
+namespace DoingThing.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
